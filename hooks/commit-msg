@@ -1,0 +1,11 @@
+#!/bin/sh
+# Marcus — strips AI co-author / "generated with" trailers from commit messages.
+# Versioned and shipped with the plugin; install it per project by pointing core.hooksPath at it.
+msg_file="$1"
+[ -f "$msg_file" ] || exit 0
+tmp="$msg_file.marcus"
+grep -viE '^[[:space:]]*Co-Authored-By:.*(Claude|Anthropic|anthropic\.com)' "$msg_file" \
+  | grep -viE 'Generated with .*Claude|Generated with \[Claude|Co-authored-by:.*Claude|Generated with Claude' \
+  > "$tmp"
+if [ -s "$tmp" ]; then mv "$tmp" "$msg_file"; else rm -f "$tmp"; fi
+exit 0
