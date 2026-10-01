@@ -1,0 +1,13 @@
+{
+  "name": "marcus",
+  "version": "0.1.0",
+  "description": "A multi-agent delivery team for Claude Code: one orchestrator, seven specialists, a two-stage review gate, and git guardrails: no push, PR or merge without a sentinel only you create, and the production branch off-limits in every mode. Tracker work goes through a seven-operation contract with four adapters — one of them a local HTML board needing no account, no network and no connector.",
+  "author": {
+    "name": "John GAMBOA",
+    "url": "https://github.com/JayGamb"
+  },
+  "homepage": "https://github.com/JayGamb/marcus",
+  "repository": "https://github.com/JayGamb/marcus",
+  "license": "MIT",
+  "keywords": ["agents", "orchestration", "workflow", "code-review", "supabase", "multi-agent"]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "marcus",
+  "description": "The Marcus delivery system: an orchestrator skill, seven specialist agents, and the guardrails they run under.",
+  "owner": {
+    "name": "John GAMBOA",
+    "url": "https://github.com/JayGamb"
+  },
+  "plugins": [
+    {
+      "name": "marcus",
+      "source": "./",
+      "description": "Multi-agent delivery team: orchestrator + 7 specialists, two-stage review, no push or merge without an owner-only sentinel, production off-limits in every mode, a seven-operation tracker contract with four adapters, one of them a local board needing no account at all."
+    }
+  ]
+}

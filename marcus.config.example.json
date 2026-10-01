@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "code": "[PROJECT_CODE]",
+  "company": "[COMPANY_NAME]",
+  "owner": {
+    "name": "[OWNER_NAME]",
+    "email": "[OWNER_GIT_EMAIL]"
+  },
+  "branches": {
+    "integration": "staging",
+    "production": "main"
+  },
+  "stack": {
+    "backend": "supabase",
+    "frontend": "vite-react-ts",
+    "host": "netlify"
+  },
+  "language": "en",
+  "tracker": {
+    "adapter": "clickup",
+    "workspace": "[CLICKUP_WORKSPACE_ID]",
+    "space": "[CLICKUP_SPACE_ID]",
+    "folder": "[CLICKUP_FOLDER_ID]",
+    "ownerUserId": "[CLICKUP_OWNER_USER_ID]",
+    "lists": {
+      "DISC": "[CLICKUP_LIST_ID_DISC]",
+      "ARCH": "[CLICKUP_LIST_ID_ARCH]",
+      "DESI": "[CLICKUP_LIST_ID_DESI]",
+      "DEV": "[CLICKUP_LIST_ID_DEV]",
+      "QA": "[CLICKUP_LIST_ID_QA]",
+      "REV": "[CLICKUP_LIST_ID_REV]",
+      "HAND": "[CLICKUP_LIST_ID_HAND]"
+    },
+    "fallback": "local-html"
+  },
+  "guardrails": {
+    "gitHook": true,
+    "commitMsgHook": true,
+    "ultraflowGitignored": true
+  }
+}
