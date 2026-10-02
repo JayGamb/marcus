@@ -4,3 +4,5 @@ node_modules/
 .claude/settings.local.json
 .claude/.ultraflow
 .worktrees/
+# pre-project research on ideas that are not public yet (skills/marcus/modes/evaluate.md §5)
+docs/evaluations/
