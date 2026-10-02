@@ -1,4 +1,21 @@
+<div align="center">
+
 # Marcus
+
+### A multi-agent delivery team for Claude Code
+
+**One orchestrator · seven specialists · two review gates · git guardrails only you can open**
+
+<p>
+  <img alt="Claude Code plugin" src="https://img.shields.io/badge/Claude%20Code-plugin-D97757?style=for-the-badge" />
+  <img alt="License MIT" src="https://img.shields.io/badge/license-MIT-0F4C75?style=for-the-badge" />
+  <img alt="7 agents" src="https://img.shields.io/badge/agents-7-1F6F54?style=for-the-badge" />
+  <img alt="16 skills" src="https://img.shields.io/badge/skills-16-5B4AB8?style=for-the-badge" />
+  <img alt="4 tracker adapters" src="https://img.shields.io/badge/trackers-4%20adapters-30363D?style=for-the-badge" />
+  <img alt="no runtime" src="https://img.shields.io/badge/runtime-none-6E7781?style=for-the-badge" />
+</p>
+
+</div>
 
 > A multi-agent delivery team for Claude Code. One orchestrator, seven specialists, a two-stage review gate, and git guardrails: no push, PR or merge without a sentinel only you create, and the production branch off-limits in every mode.
 
@@ -11,6 +28,27 @@ Marcus takes one objective, cuts it into slices, runs them in isolated git workt
 ```
 
 **What comes back.** That objective grilled until its acceptance criteria are unambiguous, cut into vertical slices on files no other slice touches, one agent and one worktree per slice, one local commit each, both review gates, then a merge and a handoff. [**What it actually does**](#what-it-actually-does), one section down, walks that exact run end to end with its slice table — it is the fastest way to see the shape.
+
+```
+         ┌──────────────────────────────┐
+         │  /marcus new "<objective>"   │
+         └───────────────┬──────────────┘
+                         ▼
+          grill  →  spec  →  vertical slices
+                         │
+        ┌────────────────┼────────────────┐
+        ▼                ▼                ▼
+   worktree A       worktree B       worktree C
+    one agent        one agent        one agent
+    one commit       one commit       one commit
+        └────────────────┼────────────────┘
+                         ▼
+        Stage 1  correctness, standards, security
+                         ▼
+        Stage 2  the owner's bar — can say no alone
+                         ▼
+                 merge  +  handoff
+```
 
 **Try it in two minutes, with nothing set up.**
 
