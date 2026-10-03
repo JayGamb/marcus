@@ -6,3 +6,5 @@ node_modules/
 .worktrees/
 # pre-project research on ideas that are not public yet (skills/marcus/modes/evaluate.md §5)
 docs/evaluations/
+# the owner's scrub registry for scripts/snapshot.sh — real codes and names, never committed
+.marcus-scrub

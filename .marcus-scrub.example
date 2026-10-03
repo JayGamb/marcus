@@ -1,0 +1,13 @@
+# .marcus-scrub.example — the format of the scrub registry that scripts/snapshot.sh reads.
+# The real file is .marcus-scrub at the main clone's root: gitignored, never committed, never shipped.
+# Copy this file to .marcus-scrub, replace every entry below with your own, delete these ones.
+#
+# One entry per line: a product code, a client code or a name. Matched literally, as a whole
+# word, case-insensitively, at least 2 characters. Anything from # to end of line is a
+# comment (ACME#old reads as ACME), blank lines are ignored.
+# Do not list the owner's name: owner-name already gates it from marcus.config.json, and
+# only owner-name carries the LICENSE / plugin-manifest allowlist — the registry has none.
+ACME
+GLBX
+Globex
+Initech Sample Client
